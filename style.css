@@ -22,6 +22,7 @@ input[type="text"] {
   border-bottom: 1px solid #888;
   font-size: 1.2rem;
   padding: 5px 0;
+  width: 100%;
 }
 
 input[type="text"]:focus {
@@ -32,6 +33,7 @@ input[type="text"]:focus {
 ul {
   list-style: none;
   text-align: left;
+  padding: 0;
 }
 ul li {
   background-color: #333;
@@ -58,10 +60,18 @@ button#change {
   border: 1px solid #888;
   background-color: transparent;
   color: #fff;
-  padding: 4px 10px;
+  padding: 10px 20px;
   border-radius: 20px;
   margin-bottom: 20px;
+  font-size: 16px;
 }
+
+button#change:hover{
+    border-color: #ff521f;
+    background-color: #fff;
+    color: #ff521f;
+    cursor: pointer;
+  }
 
 div.info{
     display: grid;
