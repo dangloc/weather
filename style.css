@@ -40,10 +40,13 @@ ul li {
   margin-top: 2px;
   padding: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul li span {
   color: #777;
+  margin-left: 8px;
 }
 
 #degrees {
