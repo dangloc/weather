@@ -69,30 +69,74 @@ button#change {
   font-size: 16px;
 }
 
-button#change:hover{
-    border-color: #ff521f;
-    background-color: #fff;
-    color: #ff521f;
-    cursor: pointer;
+button#change:hover {
+  border-color: #ff521f;
+  background-color: #fff;
+  color: #ff521f;
+  cursor: pointer;
+}
+
+div.info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+div.info h3 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+div.info .value span {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+#map {
+  position: fixed;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  #map {
+    position: inherit;
+    width: 95% !important;
+    margin: 0 auto;
+    height: 50vh !important;
+    border-radius: 12px;
   }
 
-div.info{
-    display: grid;
-    grid-template-columns: repeat(5 , 1fr);
+  form,
+  #weather {
+
+    margin: 24px auto;
+
+  }
+
+  img{
+    width: 150px;
+  }
+
+  button#change {
+    border: 2px solid #888;
+    background-color: transparent;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  div.info h3 {
+    font-size: 0.7rem;
+  }
+
+  div.info .value span {
+    font-size: 0.7rem;
+  }
 }
 
-div.info h3{
-    font-size: .8rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-
-div.info .value span{
-    color: #888;
-    font-size: .8rem;
-}
-
-#map{
-  position: fixed;
+@media screen and (max-width: 370.99px) {
 }
