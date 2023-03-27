@@ -10,7 +10,7 @@ form,
 #weather {
   display: block;
   width: 100%;
-  max-width: 300px;
+  /* max-width: 1000px; */
   margin: 50px auto;
   text-align: center;
 }
@@ -60,7 +60,7 @@ ul li span {
 }
 
 button#change {
-  border: 1px solid #888;
+  border: 2px solid #888;
   background-color: transparent;
   color: #fff;
   padding: 10px 20px;
@@ -78,7 +78,7 @@ button#change:hover{
 
 div.info{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5 , 1fr);
 }
 
 div.info h3{
@@ -91,4 +91,8 @@ div.info h3{
 div.info .value span{
     color: #888;
     font-size: .8rem;
+}
+
+#map{
+  position: fixed;
 }
