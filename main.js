@@ -25,8 +25,8 @@ async function showWeather(lat, lon, name) {
   );
   const data = await response.json();
 
-  const temp = Math.round(data.main.temp);
-  const feelsLike = Math.round(data.main.feels_like);
+  const temp = parseFloat(data.main.temp.toFixed(1));
+  const feelsLike = parseFloat(data.main.feels_like.toFixed(1));
   const humidity = Math.round(data.main.humidity);
   const wind = data.wind.speed;
   const icon = data.weather[0].icon;
